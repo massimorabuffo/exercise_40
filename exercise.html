@@ -6,10 +6,8 @@
 
 <script>
 
-// Non sono riuscito ad attaccare la lista al <div> 
-
 const ul = document.createElement("ul");
-document.body.appendChild(ul);
+document.getElementById("container").appendChild(ul);
 fetchData();
 
 async function fetchData() {
@@ -20,7 +18,6 @@ async function fetchData() {
   } catch{
     (err) => console.error(error);
   }
- 
 }
 
 function cicle(res){
